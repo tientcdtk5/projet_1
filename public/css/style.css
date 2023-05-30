@@ -1,0 +1,42 @@
+.nav-logo{
+    width: 60px;
+    min-height: 60px;
+   opacity: 0.8;
+}
+.nav-login-t,.flast-btn{
+    background-color: rgb(69, 125, 69);
+    color: aliceblue;
+    border: 2px solid rgb(237, 233, 233);
+    border-radius: 8px;
+    padding: 8px 5px;
+    font-weight: 600;
+}
+.flast{
+    background-color:rgb(212, 232, 239) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+
+}
+.flast-content{
+    margin-bottom: 0px;
+    padding: 2px 8px;
+}
+.flast-btn{
+    padding: 5px ;
+    
+}
+.nav-form-1{
+    margin-top: 0;
+}
+.blog-most{
+    text-decoration: none;
+    color: black;
+}
+.blog-list-most{
+    list-style: auto;
+}
+.blog-most:hover{
+    color: rgb(51, 51, 129);
+}
