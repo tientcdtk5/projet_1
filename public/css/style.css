@@ -1,3 +1,12 @@
+.main{
+    width: 100%;
+    max-width: 1650px;
+}
+.container{
+    /* width: 60%; */
+ 
+}
+.navbar-nav{width: 85%;}
 .nav-logo{
     width: 60px;
     min-height: 60px;
@@ -38,5 +47,59 @@
     list-style: auto;
 }
 .blog-most:hover{
-    color: rgb(51, 51, 129);
+    color: rgb(6, 86, 41);
+}
+.file {
+  position: relative;
+  width: 100%;
+  
+  border-radius: 10px;
+}
+
+.file-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #25b23a;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 25px;
+
+  height: 0;
+  transition: .5s ease;
+}
+
+.file:hover .overlay {
+  height: 25%;
+}
+
+.file-text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.btn-job{
+    width:200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.job-box{
+    margin-bottom: 20px;
 }
