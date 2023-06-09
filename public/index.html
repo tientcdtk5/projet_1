@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/font.css">
   
     <link rel="shortcut icon" href="img/T-logo.jpg" type="image/x-icon">
     <title>T-Lancer Lựa chọn hàng đầu</title>
@@ -68,7 +71,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fw-medium fs-5" id="blog-show" href="blog.html">Blog</a>
+                    <a class="nav-link fw-medium fs-5" id="blog-show" href="#blog-click">Blog</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link fw-medium fs-5" href="#">Hướng dẫn</a>
@@ -83,8 +86,8 @@
                     </ul>
                   </li>
                   <li class="nav-item d-lg-none ">
-                    <a class="nav-link fw-medium fs-5" href="font.html">Đăng nhập</a>
-                    <a class="nav-link fw-medium fs-5" href="#">Đăng ký</a>
+                    <a id="log-Btn" class="nav-link fw-medium fs-5" href="#">Đăng nhập</a>
+                    <a id="create-Btn" class="nav-link fw-medium fs-5" href="#">Đăng ký</a>
                   </li>
                   <li class="nav-item d-none d-lg-flex pe-lg-5  ">
                     <li class="nav-item dropdown d-none d-lg-flex">
@@ -99,8 +102,8 @@
                         <li><a class="dropdown-item fw-bold " href="#">Tiếng Việt</a></li>
                       </ul>
                     </li>
-                    <a class="nav-link d-none d-lg-block fw-medium fs-5" href="font.html">Đăng nhập</a>
-                    <a class="nav-link d-none d-lg-block fw-medium fs-5" href="#">Đăng ký</a>
+                    <a id="log-Btn1" class="nav-link d-none d-lg-block fw-medium fs-5" href="#">Đăng nhập</a>
+                    <a id="create-Btn1" class="nav-link d-none d-lg-block fw-medium fs-5" href="#">Đăng ký</a>
                     <button class="nav-login-t d-none d-lg-block fs-5">Đăng dự án</button>
                   </li>
                 </ul>
@@ -110,15 +113,16 @@
                 </form>
               </div>
             </div>
-            <button class="nav-login-t d-lg-none fs-5" href="font.html">Đăng nhập</button>
+            <button class="nav-login-t d-lg-none fs-5">Đăng dự án</button>
           </div>
         </nav>
         
       </div>
-       <div class="slide-mobile d-lg-none">
+     
+      <div class="slide-mobile d-lg-none">
         <img class="card-img-top" src="./img/slide1.jpg" alt="">
       </div>
-      <div class="slide">
+      <div class="slide d-none d-lg-block ">
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
@@ -134,17 +138,17 @@
           </div>
 
           <div class="mySlides fade">
-           
+            <div class="numbertext">2 / 3</div>
             <img src="img/slide2.jpg" style="width:100%">
             <div class="text text-uppercase">
-              <p class="slide-heding">uy tín tọa niềm tin, deadline trước hạn</p>
+              <p class="slide-heding">uy tín tọa niềm tin, dealine trước hạn</p>
               <button class="flast-btn fs-5 mb-3 slide-btn">Đăng dự án</button>
             </div>
 
           </div>
 
           <div class="mySlides fade">
-           
+            <div class="numbertext ">3 / 3</div>
             <img src="img/slide3.jpg" style="width:100%">
             <div class="text text-uppercase">
               <p>việc làm đúng chuyên ngành, thu nhập cao</p>
@@ -167,7 +171,7 @@
         </div>
       </div>
 
-      <div class="container job  ">
+      <div class="container job pb-5 ">
         <h2 class="job-heading text-center fw-bold pt-4">Các công việc được quan tâm nhất </h2>
         <div class="job-box border border-secondary ">
           <div class="job-item border border-bottom-secondary pt-2 pb-2">
@@ -332,12 +336,65 @@
           </div>
         </div>
         <div class="flast-btn fs-5 btn-job">Xem thêm </div>
+        
+      </div>
+      
+        <div class="about">
+          
+          <div class="about-container about-1">
+            <hr>
+            <div class="row">
+              <div class="col">
+                <img src="img/about.jpg" alt="" class="about-img">
+              </div>
+              <div class="col d-flex flex-column justify-content-center">
+                <div class="about-heading"> Đăng dự án <h2 class="about-heading d-inline-block">không mất phí</h2></div>
+                <div class="about-heading"> Tiếp cận ngay <h2 class="about-heading d-inline-block">chuyên gia</h2></div>
+                <p class="about-content">Bạn sẽ nhanh chóng nhận được chào giá từ cộng đồng +400.000 Freelancer/Cộng tác viên. Chủ động phỏng vấn các ứng viên thông qua hệ thống tin nhắn trực tuyến để tìm người phù hợp nhất với yêu cầu của bạn.</p>
+  
+              </div>
+          </div>
+          <hr>
+  
+          </div>
+          <div class="about-container about-1">
+          <div class="row">
+            <div class="col d-flex flex-column justify-content-center">
+              <div class="about-heading"> Kết nối <h2 class="about-heading d-inline-block">nhanh chóng</h2></div>
+              <div class="about-heading"> <h2 class="about-heading d-inline-block">Rút ngắn</h2> thời gian </div>
+              <p class="about-content">T-lance kết nối bạn với Freelancer/CTV trên lãnh thổ Việt Nam và quốc tế. Công việc của bạn sẽ nhanh chóng được giải quyết với chất lượng cao.</p>
+  
+            </div>
+            <div class="col">
+              <img src="img/about1.png" alt="" class="about-img p-2">
+            </div>
+            
+          </div>
         <hr>
+        
+          </div>
+          <div class="about-container about-1">
+            <div class="row">
+              <div class="col">
+                <img src="img/about2.jpg" alt="" class="about-img">
+              </div>
+              <div class="col d-flex flex-column justify-content-center">
+                <div class="about-heading"> Đa dạng <h2 class="about-heading d-inline-block">mô hình làm việc</h2></div>
+                <div class="about-heading"> Đáp ứng <h2 class="about-heading d-inline-block">mọi nhu cầu</h2></div>
+                <p class="about-content">Freelancer tạo gói dịch vụ, khách hàng trực tiếp đặt hàng và chọn mua. Chủ động bán gói dịch vụ gia tăng thu nhập, chủ động đặt mua hoàn thiện công việc nhanh chóng.
+                  Tìm gói dịch vụ →.</p>
+  
+              </div>
+            </div>
+            <hr>
+  
+          </div>
+  
+  
+  
       </div>
-      <div class="about container">
-
-      </div>
-      <div class="most-file container">
+      
+      <div class="most-file container container1">
         <h2 class="job-heading text-center fw-bold pt-4">Hồ sơ năng lực nổi bật nhất </h2>
         <div class="mb-4 row g-2 d-flex  flex-column align-content-center flex-lg-row justify-lg-content-between ">
           <div class="col-10 col-lg-3">
@@ -409,6 +466,209 @@
         <div class="flast-btn fs-5 btn-job mb-4">Xem thêm </div>
         <hr>
       </div>
+      <div class="review d-none d-lg-block pb-5 ">
+        <h2 class="job-heading text-center fw-bold p-4">Khách hàng hài lòng về chất lượng dịch vụ </h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card   align-items-center" style="width: 18rem;">
+                <img src="img/avt1.jpg" class="card-img-top card-avt" alt="...">
+                <div class="card-body d-flex flex-column align-items-center ">
+                  <h5 class="card-title">Trường Sơn</h5>
+                  <p class="fst-italic opacity-50">Khách hàng</p>
+                  <p class="card-text text-center">Nhiệt tình, trách nhiệm, đáp ứng deadline công việc. Freelancer sẵn sàng chỉnh sửa theo các yêu cầu của khách hàng, đồng thời có thể đưa ra nhiều option để khách hàng lựa chọn. Một freelancer có thể hợp tác lâu dài</p>
+                </div>
+                
+                <div class="card-body">
+                  <div class="star m-0">
+                    <i class="ti-star bg-warning"></i>
+                    <i class="ti-star bg-warning"></i>
+                    <i class="ti-star bg-warning"></i>
+                    <i class="ti-star bg-warning"></i>
+                    <i class="ti-star bg-warning"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide"><div class="card   align-items-center" style="width: 18rem;">
+              <img src="img/avt1.jpg" class="card-img-top card-avt" alt="...">
+              <div class="card-body d-flex flex-column align-items-center ">
+                <h5 class="card-title">Trường Sơn</h5>
+                <p class="fst-italic opacity-50">Khách hàng</p>
+                <p class="card-text text-center">Nhiệt tình, trách nhiệm, đáp ứng deadline công việc. Freelancer sẵn sàng chỉnh sửa theo các yêu cầu của khách hàng, đồng thời có thể đưa ra nhiều option để khách hàng lựa chọn. Một freelancer có thể hợp tác lâu dài</p>
+              </div>
+              
+              <div class="card-body">
+                <div class="star m-0">
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                </div>
+              </div>
+            </div></div>
+            <div class="swiper-slide"><div class="card   align-items-center" style="width: 18rem;">
+              <img src="img/avt1.jpg" class="card-img-top card-avt" alt="...">
+              <div class="card-body d-flex flex-column align-items-center ">
+                <h5 class="card-title">Trường Sơn</h5>
+                <p class="fst-italic opacity-50">Khách hàng</p>
+                <p class="card-text text-center">Nhiệt tình, trách nhiệm, đáp ứng deadline công việc. Freelancer sẵn sàng chỉnh sửa theo các yêu cầu của khách hàng, đồng thời có thể đưa ra nhiều option để khách hàng lựa chọn. Một freelancer có thể hợp tác lâu dài</p>
+              </div>
+              
+              <div class="card-body">
+                <div class="star m-0">
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                </div>
+              </div>
+            </div></div>
+            <div class="swiper-slide"><div class="card   align-items-center" style="width: 18rem;">
+              <img src="img/avt1.jpg" class="card-img-top card-avt" alt="...">
+              <div class="card-body d-flex flex-column align-items-center ">
+                <h5 class="card-title">Trường Sơn</h5>
+                <p class="fst-italic opacity-50">Khách hàng</p>
+                <p class="card-text text-center">Nhiệt tình, trách nhiệm, đáp ứng deadline công việc. Freelancer sẵn sàng chỉnh sửa theo các yêu cầu của khách hàng, đồng thời có thể đưa ra nhiều option để khách hàng lựa chọn. Một freelancer có thể hợp tác lâu dài</p>
+              </div>
+              
+              <div class="card-body">
+                <div class="star m-0">
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                </div>
+              </div>
+            </div></div>
+            <div class="swiper-slide"><div class="card   align-items-center" style="width: 18rem;">
+              <img src="img/avt1.jpg" class="card-img-top card-avt" alt="...">
+              <div class="card-body d-flex flex-column align-items-center ">
+                <h5 class="card-title">Trường Sơn</h5>
+                <p class="fst-italic opacity-50">Khách hàng</p>
+                <p class="card-text text-center">Nhiệt tình, trách nhiệm, đáp ứng deadline công việc. Freelancer sẵn sàng chỉnh sửa theo các yêu cầu của khách hàng, đồng thời có thể đưa ra nhiều option để khách hàng lựa chọn. Một freelancer có thể hợp tác lâu dài</p>
+              </div>
+              
+              <div class="card-body">
+                <div class="star m-0">
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                </div>
+              </div>
+            </div></div>
+            <div class="swiper-slide"><div class="card   align-items-center" style="width: 18rem;">
+              <img src="img/avt1.jpg" class="card-img-top card-avt" alt="...">
+              <div class="card-body d-flex flex-column align-items-center ">
+                <h5 class="card-title">Trường Sơn</h5>
+                <p class="fst-italic opacity-50">Khách hàng</p>
+                <p class="card-text text-center">Nhiệt tình, trách nhiệm, đáp ứng deadline công việc. Freelancer sẵn sàng chỉnh sửa theo các yêu cầu của khách hàng, đồng thời có thể đưa ra nhiều option để khách hàng lựa chọn. Một freelancer có thể hợp tác lâu dài</p>
+              </div>
+              
+              <div class="card-body">
+                <div class="star m-0">
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                </div>
+              </div>
+            </div></div>
+            <div class="swiper-slide"><div class="card   align-items-center" style="width: 18rem;">
+              <img src="img/avt1.jpg" class="card-img-top card-avt" alt="...">
+              <div class="card-body d-flex flex-column align-items-center ">
+                <h5 class="card-title">Trường Sơn</h5>
+                <p class="fst-italic opacity-50">Khách hàng</p>
+                <p class="card-text text-center">Nhiệt tình, trách nhiệm, đáp ứng deadline công việc. Freelancer sẵn sàng chỉnh sửa theo các yêu cầu của khách hàng, đồng thời có thể đưa ra nhiều option để khách hàng lựa chọn. Một freelancer có thể hợp tác lâu dài</p>
+              </div>
+              
+              <div class="card-body">
+                <div class="star m-0">
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                </div>
+              </div>
+            </div></div>
+            <div class="swiper-slide"><div class="card   align-items-center" style="width: 18rem;">
+              <img src="img/avt1.jpg" class="card-img-top card-avt" alt="...">
+              <div class="card-body d-flex flex-column align-items-center ">
+                <h5 class="card-title">Trường Sơn</h5>
+                <p class="fst-italic opacity-50">Khách hàng</p>
+                <p class="card-text text-center">Nhiệt tình, trách nhiệm, đáp ứng deadline công việc. Freelancer sẵn sàng chỉnh sửa theo các yêu cầu của khách hàng, đồng thời có thể đưa ra nhiều option để khách hàng lựa chọn. Một freelancer có thể hợp tác lâu dài</p>
+              </div>
+              
+              <div class="card-body">
+                <div class="star m-0">
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                </div>
+              </div>
+            </div></div>
+            <div class="swiper-slide"><div class="card   align-items-center" style="width: 18rem;">
+              <img src="img/avt1.jpg" class="card-img-top card-avt" alt="...">
+              <div class="card-body d-flex flex-column align-items-center ">
+                <h5 class="card-title">Trường Sơn</h5>
+                <p class="fst-italic opacity-50">Khách hàng</p>
+                <p class="card-text text-center">Nhiệt tình, trách nhiệm, đáp ứng deadline công việc. Freelancer sẵn sàng chỉnh sửa theo các yêu cầu của khách hàng, đồng thời có thể đưa ra nhiều option để khách hàng lựa chọn. Một freelancer có thể hợp tác lâu dài</p>
+              </div>
+              
+              <div class="card-body">
+                <div class="star m-0">
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                </div>
+              </div>
+            </div></div>
+            <div class="swiper-slide"><div class="card   align-items-center" style="width: 18rem;">
+              <img src="img/avt1.jpg" class="card-img-top card-avt" alt="...">
+              <div class="card-body d-flex flex-column align-items-center ">
+                <h5 class="card-title">Trường Sơn</h5>
+                <p class="fst-italic opacity-50">Khách hàng</p>
+                <p class="card-text text-center">Nhiệt tình, trách nhiệm, đáp ứng deadline công việc. Freelancer sẵn sàng chỉnh sửa theo các yêu cầu của khách hàng, đồng thời có thể đưa ra nhiều option để khách hàng lựa chọn. Một freelancer có thể hợp tác lâu dài</p>
+              </div>
+              
+              <div class="card-body">
+                <div class="star m-0">
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                  <i class="ti-star bg-warning"></i>
+                </div>
+              </div>
+            </div></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        </div>
+      </div>
+      <div class="booter ">
+        <div class="container container1">
+          <div class="row">
+
+          </div>
+          <div class="row">
+            
+          </div>
+        </div>
+      </div>
     </div>
 
 
@@ -416,8 +676,9 @@
 
 
 
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
     <script src="js/slide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
