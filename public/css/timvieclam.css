@@ -1,0 +1,20 @@
+
+.play-button {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+  
+  .series-title {
+    height: 46.4px;
+  }
+  
+  .nav.nav-underline .nav-link.active {
+    color: rgb(235, 231, 231) !important;
+    font-size: 24px;
+    background-color: rgba(16, 59, 232, 0.529);
+  }
+  .nav-item:hover{
+    background-color: rgba(16, 59, 232, 0.529);
+    
+  }
