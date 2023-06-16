@@ -23,7 +23,7 @@
         <p class="flast-content mt-3">
           Đăng ký và mời bạn bè. Nhận ngay phần thưởng lên tới 10.000.000đ
         </p>
-        <button class="flast-btn fs-5 mb-3">Đăng ký ngay</button>
+        <button class="flast-btn fs-5 mb-3" href="create.html">Đăng ký ngay</button>
       </div>
       <div class="navbar">
         <nav class="navbar navbar-expand-lg  bg-body-tertiary " style="width: 100%;">
@@ -94,16 +94,13 @@
                   </li>
                   <li class="nav-item d-none d-lg-flex pe-lg-5  ">
                     <li class="nav-item dropdown d-none d-lg-flex">
-                      <a class="nav-link dropdown-toggle fw-bold fs-5 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        V 
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-                        </svg> -->
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item " href="#">Tiếng Anh</a></li>
-                        <li><a class="dropdown-item fw-bold " href="#">Tiếng Việt</a></li>
-                      </ul>
+                      
+                      <select class="form-select languat" aria-label="Default select example">
+                        <option selected>Ngôn ngữ</option>
+                        <option value="1">Tiếng Việt</option>
+                        <option value="2">English</option>
+                        
+                      </select>
                     </li>
                     <a id="log-Btn1" class="nav-link d-none d-lg-block fw-medium fs-5" href="login.html">Đăng nhập</a>
                     <a id="create-Btn1" class="nav-link d-none d-lg-block fw-medium fs-5" href="create.html">Đăng ký</a>
@@ -135,7 +132,7 @@
             <img src="img/slide1.jpg" style="width:100%">
             <div class="text text-uppercase">
               <p>giải pháp nhanh chóng</p>
-              <button class="flast-btn fs-5 mb-3 slide-btn">Đăng ký ngay</button>
+              <button class="flast-btn fs-5 mb-3 slide-btn"  href="create.html">Đăng ký ngay</button>
             </div>
 
           </div>
@@ -155,7 +152,7 @@
             <img src="img/slide3.jpg" style="width:100%">
             <div class="text text-uppercase">
               <p>việc làm đúng chuyên ngành, thu nhập cao</p>
-              <button class="flast-btn fs-5 mb-3 slide-btn">Đăng ký ngay</button>
+              <button class="flast-btn fs-5 mb-3 slide-btn" href="create.html">Đăng ký ngay</button>
             </div>
 
           </div>
@@ -351,7 +348,7 @@
                 <img src="img/about.jpg" alt="" class="about-img">
               </div>
               <div class="col d-flex flex-column justify-content-center">
-                <div class="about-heading"> Đăng dự án <h2 class="about-heading d-inline-block">không mất phí</h2></div>
+                <div class="about-heading"> <p class="">Đăng dự án</p> <h2 class="about-heading d-inline-block">không mất phí</h2></div>
                 <div class="about-heading"> Tiếp cận ngay <h2 class="about-heading d-inline-block">chuyên gia</h2></div>
                 <p class="about-content">Bạn sẽ nhanh chóng nhận được chào giá từ cộng đồng +400.000 Freelancer/Cộng tác viên. Chủ động phỏng vấn các ứng viên thông qua hệ thống tin nhắn trực tuyến để tìm người phù hợp nhất với yêu cầu của bạn.</p>
   
@@ -662,13 +659,49 @@
 
         </div>
       </div>
-      <div class="booter ">
-        <div class="container container1">
+      <div class="footer bg-black">
+        <div class="container container1 ">
           <div class="row">
-
+            <div class="col-4 d-flex gap-2 align-items-center">
+              <img class="footer-img" src="img/Logo.png" alt="">
+              <h1 class="text-light">T-Lancer</h1>
+            </div>
+            <div class="col-5">
+              <p class="text-light">T-lancer Việt Nam - Lựa chọn số một của doanh nghiệp</p>
+              <a href=""><q class="text-light">Tlancer.vn</q></a>
+            </div>
+            <div class="col-3">
+              <i class="fa-brands fa-cc-visa text-light"></i>
+              <i class="fa-brands fa-cc-mastercard text-light"></i>
+              <i class="fa-brands fa-cc-paypal text-light"></i>
+              <i class="fa-solid fa-money-check text-light"></i>
+            </div>
           </div>
           <div class="row">
-            
+            <div class="col-4 d-flex flex-column justify-content-center">
+              <p class="text-light">Chủ quản: Công ty Cổ phần Magenweb Việt Nam</p>
+              <p class="text-light">Trụ sở công ty: Số 111, Tố Hữu, Hà Nội</p>
+              <p class="text-light">Hỗ trợ: <a href="">Tlancer@gmail.com</a></p>
+              <p class="text-light">SĐT: <a href="">099998888989</a></p>
+            </div>
+            <div class="col-5 d-flex flex-column justify-content-center">
+              <a href=""><q class="text-light">Điều khoản sử dụng</q></a>
+              <a href=""><q class="text-light">Điểu khoản khách hàng</q></a>
+              <a href=""><q class="text-light">Điều khoản Freelancer</q></a>
+              <a href=""><q class="text-light">Điều khoản thanh toán</q></a>
+              <a href=""><q class="text-light">Chính sách bảo mật</q></a>
+
+            </div>
+            <div class="col-3">
+              <img src="img/bct.png" alt="">
+              <div class="footer-icon">
+                <i class="fa-brands fa-facebook text-light"></i>
+                <i class="fa-brands fa-google text-light"></i>
+                <i class="fa-brands fa-twitter text-light"></i>
+                <i class="fa-brands fa-instagram text-light"></i>
+                <i class="fa-brands fa-youtube text-light"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
