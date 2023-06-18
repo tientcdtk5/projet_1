@@ -120,6 +120,7 @@ text-align: center;
   }
 }
 .about-img{
+  width: -webkit-fill-available;
   opacity: 0.8;
 }
 .about-1{
@@ -215,4 +216,8 @@ background-color: rgb(253, 255, 254);
 }
 .footer-img{
   width: 50px;
+}
+.footer-icon i {
+ font-size: 30px;
+ padding-right: 8px;
 }
