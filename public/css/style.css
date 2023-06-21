@@ -221,3 +221,6 @@ background-color: rgb(253, 255, 254);
  font-size: 30px;
  padding-right: 8px;
 }
+a:hover{
+  cursor: pointer;
+}
